@@ -1,0 +1,102 @@
+@CHARSET "ISO-8859-1";
+body
+	{
+	margin: 0; /* margin and padding only necessary to cater for Mac IE5 */
+	padding: 0;
+	/*\*/	overflow: hidden; /* because Mac IE5 don't understand */
+	}
+div
+	{
+	margin: 0;
+	padding: 0;
+	}
+#content
+	{
+	/*\*/
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 255px;
+	/* Exclude all previous props for Mac IE5 */
+	margin: 125px 305px 5px 155px; /* Cater for Mac IE5 */
+	/*\*/ margin: 0; /* Put back for all the rest */
+	/*\*/ overflow: auto; /* no need for Mac IE5 to see this */
+	border-color:background;
+	border-width:2px;
+	border-style:solid;
+	}
+#content_full
+	{
+	/*\*/
+	position: absolute;
+	top: 60px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	
+	/* Exclude all previous props for Mac IE5 */
+	margin: 0px 0x 5px 155px; /* Cater for Mac IE5 */
+	/*\*/ margin: 0; /* Put back for all the rest */
+	/*\*/ overflow: auto; /* no need for Mac IE5 to see this */
+	}
+#sidebar-left
+	{
+	position: absolute;
+	top: 2px;
+	bottom: 2px;
+	left: 2px;
+	width: 250px;
+	overflow: auto;
+	border-color:background;
+	border-width:2px;
+	border-style:solid;
+	}
+#header
+	{
+	position: absolute;
+	top: 0;
+	/*\*/right: 305px;
+	left: 155px;   /* Exclude right and left props for Mac IE5 */
+	margin: 0 305px 0 155px;
+	/*\*/ margin: 0; /* */
+	height: 120px;
+	}
+body { background: #7DB9FA; }
+#content { background: #7DB9FA; }
+#content_full { background: #7DB9FA; }
+#sidebar-left { background: #7DB9FA; }
+#sidebar-right { background: #ffcc99; }
+#header { background: #9999cc; }
+#footer { background: #99cc99; }
+#footer h4 { background: #ccffcc; }
+/* convenience div for padding inside positioned divs */
+div.paddingwrap
+	{
+	margin: 0;
+	padding: 1em;
+	}
+p, h1, h2, h4, li
+	{
+	margin: 0;
+	padding: 0;
+	}
+h3
+	{
+	margin: 1em 0 0 0;
+	}
+ol
+	{
+	margin: 0 0 2em 1em;
+	padding: 0;
+	}
+ul
+	{
+	margin: 5em 0 2em 3em;
+	padding: 0;
+	}
+code
+	{
+	display: block;
+	background-color: #dddddd;
+	}

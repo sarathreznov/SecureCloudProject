@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>CloudStorage</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>FileDownloadServlet</servlet-name>
+    <servlet-class>com.aws.s3.encrypt.FileDownloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileDownloadServlet</servlet-name>
+    <url-pattern>/FileDownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ShareFilesServlet</servlet-name>
+    <servlet-class>com.aws.s3.encrypt.ShareFilesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShareFilesServlet</servlet-name>
+    <url-pattern>/ShareFilesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServerEncryptUploadServlet</servlet-name>
+    <servlet-class>com.aws.s3.encrypt.ServerEncryptUploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServerEncryptUploadServlet</servlet-name>
+    <url-pattern>/admin/ServerEncryptUploadServlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>AuthenticationFilter</display-name>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>com.aws.security.AuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/AuthenticationFilter</url-pattern>
+  </filter-mapping>
+</web-app>

@@ -1,0 +1,16 @@
+/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+body {
+	background: #d6f9ff; /* Old browsers */
+background: -moz-linear-gradient(top,  #d6f9ff 0%, #9ee8fa 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6f9ff), color-stop(100%,#9ee8fa)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top left, #FFFFFF 0%, #00A3EF 80%);
+background: -o-linear-gradient(top,  #d6f9ff 0%,#9ee8fa 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #d6f9ff 0%,#9ee8fa 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #d6f9ff 0%,#9ee8fa 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', endColorstr='#9ee8fa',GradientType=0 ); /* IE6-9 */
+}
+
+align_center{
+	height: 50px;
+	}
+	
